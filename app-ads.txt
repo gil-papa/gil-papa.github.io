@@ -1,0 +1,4 @@
+# https://gil-papa.github.io/app-ads.txt
+# O domínio precisa estar no campo de site do perfil de desenvolvedor da Play para o
+# AdMob associar este arquivo aos apps da conta.
+google.com, pub-1182248333096782, DIRECT, f08c47fec0942fa0
