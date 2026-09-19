@@ -37,7 +37,7 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--linh
 <body>
 <main>
 <h1>Política de Privacidade — Relatório de Conservação TCG</h1>
-<p><strong>Última atualização: 1 de setembro de 2026</strong></p>
+<p><strong>Última atualização: 10 de setembro de 2026</strong></p>
 <hr>
 <h2>O que este app faz</h2>
 <p>O app produz relatórios visuais do estado de conservação de cartas colecionáveis: fotos e um vídeo curto da carta, com data e hora assinadas, reunidos num arquivo que você pode enviar a outra pessoa.</p>
@@ -57,22 +57,18 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--linh
 <li>seu <strong>endereço de e-mail</strong>.</li>
 </ul>
 <p><strong>Seu e-mail é gravado dentro do relatório assinado</strong>, no campo <code>ownerGoogleEmail</code> do manifesto. Isso é intencional: o relatório atesta quem o produziu. <strong>Significa que, ao compartilhar um relatório, você compartilha também o seu endereço de e-mail com quem o receber.</strong> Se isso não for desejável para um envio específico, não compartilhe aquele relatório.</p>
-<h3>Anúncios</h3>
-<p>A tela de lista de relatórios exibe um banner do <strong>Google AdMob</strong>. Para escolher o anúncio, o SDK do AdMob coleta e envia ao Google:</p>
-<ul>
-<li>o <strong>identificador de publicidade</strong> do aparelho (Android Advertising ID);</li>
-<li>o <strong>endereço IP</strong>, o modelo do aparelho, o idioma e o sistema operacional;</li>
-<li>sinais de interação com o anúncio.</li>
-</ul>
-<p><strong>O AdMob não tem acesso aos seus relatórios</strong>, às fotos, aos vídeos, ao banco de dados do app nem ao seu e-mail. O banner existe só na tela de lista e não aparece em nenhuma tela que exiba o conteúdo de um relatório.</p>
-<p>Você pode limitar a personalização de anúncios nas configurações do próprio aparelho (<em>Configurações → Google → Anúncios</em>), e redefinir ou excluir o identificador de publicidade a qualquer momento. Se você estiver no Espaço Econômico Europeu ou no Reino Unido, o app apresenta um formulário de consentimento antes de qualquer anúncio ser solicitado.</p>
-<p>Como o Google usa esses dados: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<h3>Assinatura do plano pago</h3>
+<p>O app <strong>não exibe anúncios</strong>, em nenhum plano, e não usa o identificador de publicidade do aparelho.</p>
+<p>No Android, o plano pago é uma assinatura vendida pelo <strong>Google Play</strong>. O pagamento acontece inteiramente no Google Play: nós não vemos nem guardamos número de cartão, dados de cobrança ou endereço. Para saber se a sua conta tem a assinatura ativa, o app pergunta ao próprio Google Play, dentro do aparelho, e <strong>não envia essa informação a nenhum servidor nosso</strong> — não existe servidor nosso que a receba.</p>
+<p>Cancelar a assinatura ou pedir reembolso é feito no Google Play (no app Play Store, em <em>Pagamentos e assinaturas → Assinaturas</em>). Como o app não tem servidor, um cancelamento ou reembolso passa a valer no app na próxima vez que ele se conectar à internet.</p>
+<p>Como o Google trata os dados de pagamento: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
 <h3>Serviço de horário assinado</h3>
 <p>Ao finalizar um relatório, o app pede um horário assinado a um serviço nosso hospedado na Cloudflare. <strong>Esse pedido não leva nenhum dado do relatório</strong> — nem a foto, nem o nome da carta, nem a sua conta. Ele pede um horário e recebe um horário assinado de volta.</p>
 <p>Como toda requisição na internet, ela carrega o <strong>endereço IP</strong> do aparelho, que a Cloudflare pode registrar nos seus próprios logs de infraestrutura. Nós não armazenamos nada dessa requisição.</p>
 <h2>O que o app <strong>não</strong> faz</h2>
 <ul>
 <li>Não envia suas fotos, vídeos ou relatórios para nenhum servidor nosso.</li>
+<li>Não exibe anúncios nem coleta o identificador de publicidade do aparelho.</li>
 <li>Não usa sua localização.</li>
 <li>Não acessa sua agenda, seus contatos ou suas mensagens.</li>
 <li>Não vende dados pessoais a ninguém.</li>
@@ -80,10 +76,10 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--linh
 </ul>
 <h2>Por quanto tempo os dados ficam</h2>
 <p>Seus relatórios ficam no aparelho <strong>até você removê-los</strong>, e desaparecem se você desinstalar o app. Não há backup na nuvem: <strong>desinstalar o app apaga os relatórios, sem recuperação.</strong></p>
-<p>Duas regras do plano gratuito envolvem exclusão automática, e você é avisado antes de cada uma:</p>
+<p>Dois limites envolvem os seus relatórios, e você é avisado antes de cada um:</p>
 <ul>
-<li>até <strong>2 relatórios ativos</strong>;</li>
-<li>histórico de até <strong>3 relatórios revogados</strong>. Ao revogar um quarto, o revogado mais antigo é <strong>apagado definitivamente</strong> do aparelho, junto com suas fotos e vídeos.</li>
+<li>até <strong>2 relatórios ativos</strong> no plano gratuito (50 no plano pago);</li>
+<li>histórico de até <strong>3 relatórios revogados</strong> no plano gratuito (50 no plano pago). Ao revogar além desse número, o revogado mais antigo é <strong>apagado definitivamente</strong> do aparelho, junto com suas fotos e vídeos.</li>
 </ul>
 <h2>Seus direitos (LGPD)</h2>
 <p>Você pode, a qualquer momento:</p>
@@ -91,7 +87,6 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--linh
 <li><strong>acessar</strong> seus dados — todos estão no app, visíveis nas telas de lista e de detalhe;</li>
 <li><strong>corrigir</strong> os dados da carta, enquanto o relatório não estiver finalizado;</li>
 <li><strong>excluir</strong> qualquer relatório, ou todos de uma vez desinstalando o app;</li>
-<li><strong>revogar o consentimento</strong> de anúncios personalizados nas configurações do aparelho, ou pelo formulário de consentimento, se ele se aplicar a você;</li>
 <li><strong>excluir sua conta Google do app</strong> saindo do login; para excluir a conta no Google, use <a href="https://myaccount.google.com">https://myaccount.google.com</a>.</li>
 </ul>
 <p>Para pedidos relacionados a dados pessoais, escreva para <strong>gilbertopapa03@gmail.com</strong>.</p>
@@ -104,7 +99,7 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--linh
 <th>Política</th>
 </tr></thead><tbody>
 <tr><td>Google Firebase Authentication</td><td>login com Google</td><td><a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></td></tr>
-<tr><td>Google AdMob</td><td>banner na tela de lista</td><td><a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></td></tr>
+<tr><td>Google Play (faturamento)</td><td>assinatura do plano pago, no Android</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
 <tr><td>Cloudflare Workers</td><td>horário assinado (não recebe dado de relatório)</td><td><a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></td></tr>
 </tbody></table>
 <h2>Mudanças nesta política</h2>
