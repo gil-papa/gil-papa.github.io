@@ -37,7 +37,7 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--linh
 <body>
 <main>
 <h1>Política de Privacidade — Relatório de Conservação TCG</h1>
-<p><strong>Última atualização: 10 de setembro de 2026</strong></p>
+<p><strong>Última atualização: 20 de outubro de 2026</strong></p>
 <hr>
 <h2>O que este app faz</h2>
 <p>O app produz relatórios visuais do estado de conservação de cartas colecionáveis: fotos e um vídeo curto da carta, com data e hora assinadas, reunidos num arquivo que você pode enviar a outra pessoa.</p>
@@ -65,11 +65,12 @@ footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--linh
 <h3>Serviço de horário assinado</h3>
 <p>Ao finalizar um relatório, o app pede um horário assinado a um serviço nosso hospedado na Cloudflare. <strong>Esse pedido não leva nenhum dado do relatório</strong> — nem a foto, nem o nome da carta, nem a sua conta. Ele pede um horário e recebe um horário assinado de volta.</p>
 <p>Como toda requisição na internet, ela carrega o <strong>endereço IP</strong> do aparelho, que a Cloudflare pode registrar nos seus próprios logs de infraestrutura. Nós não armazenamos nada dessa requisição.</p>
+<p>A resposta também traz o <strong>fuso horário</strong> que a Cloudflare estima a partir desse endereço IP (por exemplo, <code>America/Sao_Paulo</code>). É uma região ampla, não a sua localização, e pode errar com VPN ou roaming. O app grava esse fuso no relatório assinado, ao lado do fuso configurado no aparelho. Se os dois derem horas diferentes, o PDF e as fotos mostram as duas. Esse fuso vai junto quando você compartilha o relatório; não fica guardado em nenhum servidor nosso.</p>
 <h2>O que o app <strong>não</strong> faz</h2>
 <ul>
 <li>Não envia suas fotos, vídeos ou relatórios para nenhum servidor nosso.</li>
 <li>Não exibe anúncios nem coleta o identificador de publicidade do aparelho.</li>
-<li>Não usa sua localização.</li>
+<li>Não usa sua localização (nem GPS, nem rede). O único dado regional é o fuso horário estimado descrito acima.</li>
 <li>Não acessa sua agenda, seus contatos ou suas mensagens.</li>
 <li>Não vende dados pessoais a ninguém.</li>
 <li>Não mantém uma página pública onde terceiros possam consultar seus relatórios.</li>
